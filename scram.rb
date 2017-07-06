@@ -12,7 +12,7 @@ class Scram < Formula
 
   needs :cxx14
 
-  depends_on macos: :leopard
+  depends_on :macos => :leopard
 
   depends_on "cmake" => :build
   depends_on "boost"
