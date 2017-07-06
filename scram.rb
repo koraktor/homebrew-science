@@ -12,8 +12,7 @@ class Scram < Formula
 
   needs :cxx14
 
-  # C++14 uses GCC 5.3, which is not ABI compatible with GCC 4.8
-  depends_on :macos unless OS.mac?
+  depends_on macos: :leopard
 
   depends_on "cmake" => :build
   depends_on "boost"
